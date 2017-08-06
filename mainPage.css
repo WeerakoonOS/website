@@ -1,0 +1,246 @@
+html {
+	background-color: ivory; 
+	font-family: times; 
+	font-size: 12px;
+	margin: 0
+}
+
+/*container area*/
+#container {
+	width: 1310px;
+	margin: 0 auto;
+	background-color: #fff
+}
+
+/*header includes logo*/
+#header {
+	width: 100%;
+	height: 93px;
+	border-bottom: 1px solid #c7c7c7;
+	background-color: #666
+}
+
+#logo {
+	float: left;
+	width: 71px;
+	height: 50px;
+	background-color: white
+}
+
+/*top_info inlcudes welcome quote, search bar*/
+
+#top_info {
+	float: center;
+	width: 40px;
+	height: 40px;
+	/*border: 1px solid #c7c7c7;*/
+	background-color: #666;
+	margin: 10px;
+	text-align: center;
+}
+
+/*#searchbox{
+	float: left;
+	margin-top: 35px;
+	margin-left: 50px;
+	text-align: center;
+}*/
+
+#searchform{
+	margin: 5px;
+}
+
+#header {
+	background-color: #e2e1d5;
+	margin: 0px;
+}
+
+#menu{
+	margin: 0px;
+	float: left;
+	/*margin-right: 50px auto;*/
+}
+
+ul#menu li {
+    display:inline;
+}
+
+form {
+    width:900px;
+    height:400px;
+    margin:10px;
+}
+
+#stext2 {
+    font-size: 25px;
+    padding:8px 15px;
+    border: 0px;
+    margin: 10px
+}   
+
+#stext1 {
+    padding:8px 15px;
+    background:lightgrey;
+    border:0px solid #dbdbdb;
+    margin-left: 10px;
+}
+
+#sbutton {
+    position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #207cca;
+    background-color:#207cca;
+    color:#fafafa;
+}
+
+#sbutton:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+} 
+
+
+
+/*help, contact us, about*/
+#menu {
+    list-style-type: none;
+    margin-top: 25px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Courier;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+li a:hover:not(.active) {
+    background-color: #9ec3ff;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#left_col {
+	float: left;
+	width: 650px;
+	height: 800px;
+	border: 1px solid #333;
+	color: #FFF
+	background-color: #000;
+	padding: 20px
+}
+
+#right_col {
+	float: right;
+	width: 575px;
+	height: 800px;
+	border: 1px solid #333;
+	color:#FFF;
+	background-color: #000;
+	padding: 20px
+}
+
+#footer {
+	padding: 20px;
+	clear: both;
+}
