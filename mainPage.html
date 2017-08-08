@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>QuickBuy.lk</title>
-	<link rel="stylesheet" type="text/css" href="mainPage.css">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="commonPage.css">	
 	<script>
 	var slideIndex = 1;
 	showSlides(slideIndex);
@@ -42,18 +43,18 @@
 		</div>
 		<div id="top_info">
 			<form id="searchform">
-				<input type="text" id="stext2" placeholder="Welcome to QuickBuy.lk !">
-				<input type="text" id="stext1" placeholder="Search Here" required>
+				<input type="text" id="stext1" placeholder="Welcome to QuickBuy.lk !">
+				<input type="text" id="stext2" placeholder="Search Here" required>
 				<input type="button" id="sbutton" value="Search">
-				<input type="" name="">
 		</form>
 		</div>
 		<div id="navbar">
-			<ul id="menu">
-				<li><a href="">Help</a></li>
-				<li><a href="">Contact</a></li>
-				<li><a href="">About Us</a></li>
-			</ul>
+			<ol id="menu">
+				<li><a href="">Categories</a></li>
+				<li><a href="./contactPage.html">Help & Contact</a></li>
+				<li><a href="./aboutPage.html">About Us</a></li>
+				<li><a href="">My Account</a></li>
+			</ol>
 		</div>
 	</div>
 	<!--CONTENET AREA-->
@@ -80,6 +81,7 @@
 	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 	</div>
+
 	<div style="text-align:center">
 	  <span class="dot" onclick="currentSlide(1)"></span>
 	  <span class="dot" onclick="currentSlide(2)"></span>
@@ -87,12 +89,46 @@
 	</div> 
 	
 	</div>
-		<div id="left_col">Left Col</div>
-		<div id="right_col">Right Col</div>
+		<div id="left_col">
+			<h1>Categories</h1>
+			<ul>
+				<li><h3>Vehicle</h3></li>
+	            <li><img src="">image1</li>	            
+			</ul>
+
+			<ul>
+				<li><h3>Houses</h3></li>
+	            <li><img src="">image2</li>            
+			</ul>
+
+			<ul>
+				<li><h3>Mobile Phones</h3></li>
+	            <li><img src="">image3</li>            
+			</ul>
+		</div>
+
+		<div id="right_col">
+			<h1>Hot Deals Today!</h1>
+			<ul id="deals">
+	            <li><img src="">image1</li>
+	            <li>Name:</li>
+	            <li>Price:</li>
+			</ul>
+			<ul id="deals">
+	            <li><img src="">image2</li>
+	            <li>Name:</li>
+	            <li>Price:</li>
+			</ul>
+			<ul id="deals">
+	            <li><img src="">image3</li>
+	            <li>Name:</li>
+	            <li>Price:</li>
+			</ul>
+		</div>
 	</div>
 	<div class="footer-copyright">
         Copyright Â© 2017 <b>Team V4 </b>
-      </div>
+    </div>
 	<!--FOOTER AREA-->
 	<!--  <div id="footer">Footer</div> -->
 </div>
