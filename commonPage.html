@@ -10,19 +10,46 @@
 <body>
 <div id="container">
 	<div id="header">
+		<div id="signin">
+			<button class="button" id="signinbtn">Already a member?</button>
+			<button class="button">Sign Up</button>
+		</div>
 		<div id="logo">
 			<img src="./img/logo.jpg">
 		</div>
+		<div>
+			<p id="stext1"> Welcome to QuickBuy.lk !</p>
+		</div>
 		<div id="top_info">
 			<form id="searchform">
-				<input type="text" id="stext1" placeholder="Welcome to QuickBuy.lk !">
+				
 				<input type="text" id="stext2" placeholder="Search Here" required>
 				<input type="button" id="sbutton" value="Search">
-		</form>
+
+			</form>
+
+
 		</div>
 		<div id="navbar">
 			<ol id="menu">
-				<li><a href="">Categories</a></li>
+				<li class="dropdown">
+    				<a href="javascript:void(0)" class="dropbtn">Brands</a>
+    				<div class="dropdown-content">
+      					<a href="#">Apple</a>
+      					<a href="#">Samsung</a>
+      					<a href="#">LG</a>
+      					<a href="#">Asus</a>
+      					<a href="#">Huawei</a>
+      					<a href="#">Xiaomi</a>
+      					<a href="#">Lenovo</a>
+      					<a href="#">Blackberry</a>
+      					<a href="#">Motorola</a>
+      					<a href="#">Nokia</a>
+      					<a href="#">Nexus</a>
+      					<a href="#">Oppo</a>
+      					<a href="#">Google</a>
+    				</div>
+  				</li>
 				<li><a href="">Help & Contact</a></li>
 				<li id="selected_item"><a href="./aboutPage.html">About Us</a></li>
 				<li><a href="">My Account</a></li>
@@ -30,5 +57,7 @@
 		</div>
 	</div>
 </div>
+
+
 </body>
 </html>
