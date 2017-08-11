@@ -152,7 +152,7 @@ li a:hover:not(.active) {
 }
 
 #selected_item{
-  background-color: #D8D3D3; 
+  /*background-color: #D8D3D3; */
 }
 
 .slideshow-container {
@@ -331,4 +331,99 @@ li.dropdown {
 
 #signinbtn{
   margin-right: 5px;
+}
+
+
+#signupform {
+  background:white;
+  width: 500px;
+  height: 800px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  font-family: lato;
+  position: relative;
+  color: #333;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+#signupform header {
+  background: #207cca;
+  padding: 40px 20px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+  border-radius: 10px 10px 0 0;
+}
+#signupform label {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  position: relative;
+  margin-left: 20px;
+}
+
+#signupform label span {
+  color: #FF3838;
+  font-size: 2em;
+  position: absolute;
+  left: 2.3em;
+  top: -10px;
+}
+#signupform input {
+  display: block;
+  width: 78%;
+  margin-left: 20px;
+  padding: 5px 20px;
+  font-size: 1em;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+
+#signupform .help {
+  margin-left: 20px;
+  font-size: 0.8em;
+  color: #777;
+}
+#signupform button {
+  /*position: relative;*/
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: inherit;
+  color: white;
+  background: #FF3838;
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  font-size: 1.3em;
+  font-weight: 400;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+#signupform button:hover {
+  background: #ff5252;
+}
+
+#name1, #name2{
+  margin-left: 5px;
+}
+
+#email1, #city1{
+  margin-left: -30px;
+}
+
+#repass{
+  margin-left: 50px;
+}
+
+#signupdiv{
+  margin-top: 150px;
 }
