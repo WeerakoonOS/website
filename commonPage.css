@@ -3,7 +3,6 @@
 }
 
 html {
-	background-color: ivory; 
 	font-family: times; 
 	font-size: 12px;
 	margin: 0
@@ -152,7 +151,7 @@ li a:hover:not(.active) {
 }
 
 #selected_item{
-  /*background-color: #D8D3D3; */
+  background-color: #D8D3D3; 
 }
 
 .slideshow-container {
@@ -426,4 +425,8 @@ li.dropdown {
 
 #signupdiv{
   margin-top: 150px;
+}
+
+#logo2{
+  margin: 100px;
 }
