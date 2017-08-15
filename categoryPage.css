@@ -1,0 +1,20 @@
+#catgrid{
+	margin-top: 100;
+}
+
+td {
+	padding-left: 50px;
+	padding-right: 70px;
+}
+
+.name{
+	text-align: center;
+}
+
+td:hover .image{
+	opacity: 0.3;
+}
+
+.image{
+	transition: .5s ease;
+}
