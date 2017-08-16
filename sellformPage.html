@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Post Your Ad</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="commonPage.css">
+	<link rel="stylesheet" type="text/css" href="sellformPage.css">
+
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<div id="signin">
+			<button class="button" id="signinbtn">Already a member?</button>
+			<button class="button" onclick="window.location.href='./signUp.html'">Sign Up</button>
+		</div>
+		<div id="logo">
+			<img src="./img/logo.jpg">
+		</div>
+		<div>
+			<p id="stext1"> Welcome to QuickBuy.lk !</p>
+		</div>
+		<div id="top_info">
+			<form id="searchform">
+				
+				<input type="text" id="stext2" placeholder="Search Here" required>
+				<input type="button" id="sbutton" value="Search">
+
+			</form>
+
+
+		</div>
+		<div id="navbar">
+			<ol id="menu">
+				<li><a href="categoryPage.html">Brands</a></li>
+				<li><a href="contactPage.html">Help & Contact</a></li>
+				<li><a href="./aboutPage.html">About Us</a></li>
+				<li><a href="">My Account</a></li>
+			</ol>
+		</div>
+	</div>
+</div>
+
+
+<div id="sellformdiv">
+	<form id="sellform">
+		<h1 class="text2">
+			Condition<br>
+		</h1>
+		<label><input type="radio" name="condition" value="new" checked> New</label>
+		<label><input type="radio" name="condition" value="used"> Used</label>
+
+		<br>
+		<br>
+
+		<select class="alltext" name="brand">
+		    <option value="volvo">Brand</option>
+		    <option value="saab">Apple</option>
+		    <option value="fiat">Asus</option>
+		    <option value="audi">Blackberry</option>
+		    <option value="fiat">Google</option>
+		    <option value="fiat">Huawei</option>
+		    <option value="fiat">Lenovo</option>
+		    <option value="fiat">LG</option>
+		    <option value="fiat">Motorola</option>
+		    <option value="fiat">Nexus</option>
+		    <option value="fiat">Nokia</option>
+		    <option value="fiat">Oppo</option>
+		    <option value="fiat">Samsung</option>
+		    <option value="fiat">Sony</option>
+	  	</select>
+
+	  	<br>
+	  	<br>
+
+	  	<input class="alltext" type="text" name="model" placeholder="The model of the phone...">
+
+	  	<br>
+	  	<br>
+
+	  	<h1 class="text2">
+			Authenticity<br>
+		</h1>
+		<label><input type="radio" name="authenticity" value="original" checked> Original</label>
+		<label><input type="radio" name="authenticity" value="replica"> Replica</label>
+
+		<br>
+		<br>
+		<br>
+
+		<h1 class="text2">
+			Features (optional)<br>
+		</h1>
+		<label><input type="checkbox" name="features" value="bluetooth"> Bluetooth</label>
+		<label><input type="checkbox" name="features" value="camera"> Camera</label>
+		<label><input type="checkbox" name="features" value="dualcamera"> Dual-Lens Camera</label>
+		<label><input type="checkbox" name="features" value="dualsim"> Dual Sim</label>
+		<label><input type="checkbox" name="features" value="memory"> Expandable Memory</label>
+		<label><input type="checkbox" name="features" value="fingerprint"> Fingerprint Sensor</label>
+		<br>
+		<label><input type="checkbox" name="features" value="gps"> GPS</label>
+		<label><input type="checkbox" name="features" value="physicalkey"> Physical keyboard</label>
+		<label><input type="checkbox" name="features" value="motionsensor"> Motion Sensors</label>
+		<label><input type="checkbox" name="features" value="3g"> 3G</label>
+		<label><input type="checkbox" name="features" value="4g"> 4G</label>
+		<label><input type="checkbox" name="features" value="gsm"> GSM</label>
+		<label><input type="checkbox" name="features" value="toucs"> Touch screen</label>
+		
+		<br>
+		<br>
+
+		<textarea class="alltext" rows="4" cols="50" name="comment" form="usrform" placeholder="Description.."></textarea>
+
+		<br>
+		<br>
+
+		<h1 class="text2">
+			Price<br>
+		</h1>
+		<input class="alltext" type="number" name="price" placeholder="price">
+		<label><input type="checkbox" name="price" value="Negotiable"> Negotiable</label>
+
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<h1 class="text2">
+			Contact Details<br>
+		</h1>
+		<hr>
+		<br>
+		<p class="formlable">Your name</p>
+		<input class="alltext" type="text" name="name" placeholder="Your name...">
+		<br>
+		<p class="formlable">Phone Number</p>
+		<input class="alltext" id="phonenum" type="number" name="phone" placeholder="Your phone number...">
+		<br>
+		<p class="formlable">Your Email</p>
+		<input class="alltext" type="Email" name="email" placeholder="Your E-mail...">
+		<br>
+		<br>
+		<input class="submitbtn" type="submit" name="submit" value="Post">
+
+	</form>
+</div>
+
+</body>
+</html>
