@@ -13,6 +13,7 @@ html {
 	width: 1310px;
 	margin: 0 auto;
 	background-color: #fff
+  margin-left: 10%;
 }
 
 /*header includes logo*/
@@ -53,6 +54,7 @@ html {
 #searchform{
 	margin-top: 10px;
   padding-top: 30px;
+  height: 100px
 }
 
 #header {
@@ -61,13 +63,13 @@ html {
 }
 
 #menu{
-	margin: 0px;
-	float: left;
+	margin: 0px !important;
+	float: left !important;
 	/*margin-right: 50px auto;*/
 }
 
 ul#menu li {
-    display:inline;
+    display:inline !important;
 }
 
 form {
@@ -119,29 +121,29 @@ form {
 
 /*help, contact us, about*/
 #menu {
-    list-style-type: none;
-    margin-top: 10px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
+    list-style-type: none !important;
+    margin-top: 10px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background-color: #ffffff !important;
 }
 
 #menu li {
-    float: left;
+    float: left !important;
     /*vertical-align: auto;
     text-align: left;
 }*/
 }
 
 #menu li a {
-    display: block;
-    color: #020560;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: Courier;
-    font-weight: bold;
-    font-size: 20px;
+    display: block !important;
+    color: #020560 !important;
+    text-align: center !important;
+    padding: 14px 16px !important;
+    text-decoration: none !important;
+    font-family: Courier !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
 }
 
 li a:hover:not(.active) {
