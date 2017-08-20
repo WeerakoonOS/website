@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-family: times; 
+	font-size: 12px;
+	margin: 0
+}
+
+/*container area*/
+#container {
+	width: 1310px;
+	margin: 0 auto;
+	background-color: #fff
+}
+
