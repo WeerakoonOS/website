@@ -1,3 +1,7 @@
+<?php 
+include ("connect_db.php");
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +9,14 @@
 	<title>Common Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="commonPage.css">
-
+	<link rel="stylesheet" type="text/css" href="productsPage.css">
 </head>
 <body>
 <div id="container">
 	<div id="header">
 		<div id="signin">
 			<button class="button" id="signinbtn">Already a member?</button>
-			<button class="button" onclick="window.location.href='./signUp.html'">Sign Up</button>
+			<button class="button">Sign Up</button>
 		</div>
 		<div id="logo">
 			<img src="./img/logo.jpg">
@@ -32,15 +36,50 @@
 		</div>
 		<div id="navbar">
 			<ol id="menu">
-				<li><a href="categoryPage.html">Brands</a></li>
+				<li>
+    				<a href="categoryPage.html">Brands</a></li>
 				<li><a href="contactPage.html">Help & Contact</a></li>
-				<li id="selected_item"><a href="./aboutPage.html">About Us</a></li>
+				<li><a href="./aboutPage.html">About Us</a></li>
 				<li><a href="">My Account</a></li>
 			</ol>
 		</div>
 	</div>
-</div>
+	</div>
 
+	<h2>Product Details</h2>
+
+	<div class="categories">
+	  <img src="./img/p1.jpg" alt="Avatar" style="width:50%">
+	  <div class="container1">
+	  	<table border="0" cellpadding="5px">
+	  		<tr>
+	  			<td>Product Name :</td>
+	  		</tr>
+	  		<tr>
+	  			<td></td>
+	  		</tr>
+	  		<tr>
+	  			<td>Brand :</td>
+	  		</tr>
+	  		<tr>
+	  			<td></td>
+	  		</tr>
+	  		<tr>
+	  			<td>Price :</td>
+	  		</tr>
+	  		<tr>
+	  			<td></td>
+	  		</tr>
+	  		<tr>
+	  			<td>Vendor Details</td>
+	  		</tr>
+	  		<tr>
+	  			<td></td>
+	  		</tr>
+	  	</table>
+	    
+	  </div>
+	</div>
 
 </body>
 </html>
