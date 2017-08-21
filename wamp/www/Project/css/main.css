@@ -1,0 +1,216 @@
+@charset "utf-8";
+body {
+	margin-top: 0px;
+	background-color: #F9F9F9;
+	width: auto;
+}
+#wrapper {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header_wrapper {
+	width: 998px;
+	height: 50px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #DFF3FF;
+	-webkit-box-shadow: 0px 1px 4px #999999;
+	box-shadow: 0px 1px 4px #999999;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-left: 1px solid #666666;
+}
+
+
+#logo {
+	width: auto;
+	display: block;
+	float: left;
+	font-family: Arial;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 132px;
+	margin-top: 4px;
+	color: #0066FF;
+	text-shadow: 1px 1px 0px #000000;
+	font-size: 32px;
+}
+#logo b {
+	font-size: 20px;
+}
+#content_wrapper {
+	margin-top: 10px;
+	width: 786px;
+	border-radius: 5px;
+	background-color: #DFF3FF;
+	border: 1px solid #666666;
+	-webkit-box-shadow: 0px 1px 4px #999999;
+	box-shadow: 0px 1px 4px #999999;
+	float: right;
+	margin-left: 10px;
+}
+#content_wrapper iframe {
+	width: 782px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	border-style: none;
+	min-height: 500px;
+}
+#post_head {
+	border: 1px solid #000000;
+	border-radius: 4px;
+	background-color: #505050;
+	font-size: large;
+	color: #FFFFFF;
+	margin-left: 10px;
+	margin-top: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 10px;
+	font-family: Arial;
+	font-weight: normal;
+	-webkit-box-shadow: 0px 3px 5px #333333;
+	box-shadow: 0px 3px 5px #333333;
+	margin-bottom: 15px;
+	display: none;
+}
+
+#side_bar {
+	width: 200px;
+	margin-top: 10px;
+	border-radius: 5px;
+	background-color: #DFF3FF;
+	border: 1px solid #666666;
+	-webkit-box-shadow: 0px 1px 4px #999999;
+	box-shadow: 0px 1px 4px #999999;
+	float: left;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	min-height: 500px;
+}
+.banner_2 {
+	width: 125px;
+	height: 125px;
+	margin-left: 14.6px;
+	margin-top: 15px;
+	float: left;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	font-family: Arial;
+	font-size: 11px;
+	text-align: center;
+	color: #999999;
+}
+
+#footer {
+	width: 998px;
+	margin-top: 10px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	background-color: #DFF3FF;
+	-webkit-box-shadow: 0px 1px 4px #999999;
+	box-shadow: 0px 1px 4px #999999;
+	border-top: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-left: 1px solid #666666;
+	float: left;
+}
+#footer_nav {
+	width: auto;
+	height: auto;
+	margin-top: 89px;
+	margin-left: 245px;
+}	
+#copyright {
+	width: 998px;
+	margin-top: 30px;
+	text-align: center;
+	font-family: Arial;
+	font-size: 13px;
+	color: #0066FF;
+	margin-bottom: 10px;
+	clear: both;
+	padding-top: 10px;
+}
+#side_bar a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-decoration: none;
+	text-align: right;
+	display: block;
+	background-color: #0066FF;
+	border-bottom: 2px solid #DFF3FF;
+	border-radius: 6px;
+	margin-right: 2px;
+	margin-left: 2px;
+	padding-right: 25px;
+}
+#side_bar a:hover {
+	background-color: #5599FF;
+}
+ul li button {
+}
+
+
+#side_bar ul {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+/*#side_bar ul ul, #side_bar ul ul ul {
+	display: none;
+}
+#side_bar ul li:hover > ul , #side_bar ul ul li:hover > ul{
+	display: block;
+}
+*/
+#side_bar ul ul a {
+	background-color: #4B5C77;
+}
+#side_bar ul ul ul a {
+	background-color: #939393;
+}
+.dropcontent {
+	display: none;
+}
+#side_bar button {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-decoration: none;
+	text-align: right;
+	display: block;
+	background-color: #0066FF;
+	border-bottom: 2px solid #DFF3FF;
+	border-radius: 6px;
+	margin-right: 2px;
+	margin-left: 2px;
+	padding-right: 25px;
+	width: 195px;
+}
+#side_bar button:hover {
+background-color: #5599FF;	
+}
+.show {display:block;}#drop3 button  {
+	background-color: #4B5C77;
+}

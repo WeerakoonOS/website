@@ -25,20 +25,18 @@ include ("./connect_db.php")
 			<p id="stext1"> Welcome to QuickBuy.lk !</p>
 		</div>
 		<div id="top_info">
-			<form id="searchform">
+				<form id="searchform" action="searchResults.php" method="post">
 				
-				<input type="text" id="stext2" placeholder="Search Here" required>
-				<input type="button" id="sbutton" value="Search">
-
+				<input type="text" name="searchText" id="stext2" placeholder="Search Here" required>
+				<input type="submit" id="sbutton" name="search" value="Search">
 			</form>
-
 
 		</div>
 		<div id="navbar">
 			<ol id="menu">
 				<li><a href="./categoryPage.php">Categories</a></li>
 				<li><a href="./contactPage.php">Help & Contact</a></li>
-				<li><a href="./aboutPage.html">About Us</a></li>
+				<li><a href="./aboutPage.php">About Us</a></li>
 				<li><a href="./myAccount.php">My Account</a></li>
 			</ol>
 		</div>
@@ -46,7 +44,7 @@ include ("./connect_db.php")
 </div>
 <!-- signup form body -->
 <div id="signupdiv" align="center">
-<form id="signupform" align="left" action="" style="border:2px solid ">
+<form id="signupform" align="left" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" style="border:2px solid ">
 <header><center> Signup Form </center></header>
 
 
@@ -64,36 +62,60 @@ include ("./connect_db.php")
 
   <br>
 
-    <label><b>Username<span>*</span></b></label>
+    <label><b>Email<span id="email1">*</span></b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
 
+  <br>
+  
+    <label><b>Username<span>*</span></b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 
   <br>
 
-    <label><b>Email<span id="email1">*</span></b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-  <br>
-
     <label><b>Password<span>*</span></b></label>
-
     <input type="password" placeholder="Enter Password" name="pw" required>
 
   <br>
 
     <label><b>Repeat Password<span id="repass">*</span></b></label>
-
     <input type="password" placeholder="Re-Enter Password" name="pwrepeat" required>
 
   <br>
     <br>
 
-
     <div class="clearfix" align="center">
 
-  <button type="button" class="cancel">Cancel</button>
-  <button type="submit" class="signup">Sign Up</button>
+  <input type="reset" class="cancel" value="Reset">
+  <input type="submit" class="signup" name="signup" value="Submit">
     </div>
 </div>
 </form>
-</body>
-</html>
+
+<?php
+
+// var_dump($_POST['signup']);    
+    if(isset($_POST['signup'])) {
+      echo "c";
+      	$fname = $_POST["fname"];
+      	$lname = $_POST["lname"];
+      	$city = $_POST["city"];
+      	$email = $_POST["email"];
+      	$uname = $_POST["uname"];
+      	$pw = $_POST["pw"];
+      	
+        // if($pw_con!=$user_pw){
+        //     echo '<script language="javascript">';
+        //     echo 'alert("Passwords Do not match ");';  //not showing an alert box.
+        //     echo '</script>';
+        // }
+        // else{
+            $sql = "INSERT INTO seller_info (`fname`,`lname`,`city`,`email`,`username`, `password`) VALUES ('$fname','$lname','$city','$email','$uname', '$pw')";
+            $res1=mysqli_query($conn, $sql)
+            	or die(mysqli_error($conn));   
+        }
+    // }
+    // else{
+
+    // }
+?>
+

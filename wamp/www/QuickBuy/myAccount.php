@@ -1,5 +1,5 @@
 <?php 
-
+ include ("connect_db.php");
  ?>
 
  <!DOCTYPE html>
@@ -25,12 +25,11 @@
 			<p id="stext1"> Welcome to QuickBuy.lk !</p>
 		</div>
 		<div id="top_info">
-			<form id="searchform">
-				
-				<input type="text" id="stext2" placeholder="Search Here" required>
-				<input type="button" id="sbutton" value="Search">
-
-			</form>
+			  <form id="searchform" action="searchResults.php" method="post">
+        
+        <input type="text" name="searchText" id="stext2" placeholder="Search Here" required>
+        <input type="submit" id="sbutton" name="search" value="Search">
+      </form>
 		</div>
 		<div id="navbar">
 			<ol id="menu">
@@ -42,6 +41,13 @@
 	</div>
 </div>
 
+<div id="content">
+  <div id="frame_head"></div>
+
+    <form method="post" action="myAccount.php">
+    
+      
+</div>
 
 </body>
 </html>

@@ -21,7 +21,7 @@
 			<p id="stext1"> Welcome to QuickBuy.lk !</p>
 		</div>
 		<div id="top_info">
-			<form id="searchform">
+			<form id="searchform" action="searchResults.php" method='post'>
 				
 				<input type="text" id="stext2" placeholder="Search Here" required>
 				<input type="button" id="sbutton" value="Search">
@@ -32,27 +32,10 @@
 		</div>
 		<div id="navbar">
 			<ol id="menu">
-				<li class="dropdown">
-    				<a href="javascript:void(0)" class="dropbtn">Brands</a>
-    				<div class="dropdown-content">
-      					<a href="#">Apple</a>
-      					<a href="#">Samsung</a>
-      					<a href="#">LG</a>
-      					<a href="#">Asus</a>
-      					<a href="#">Huawei</a>
-      					<a href="#">Xiaomi</a>
-      					<a href="#">Lenovo</a>
-      					<a href="#">Blackberry</a>
-      					<a href="#">Motorola</a>
-      					<a href="#">Nokia</a>
-      					<a href="#">Nexus</a>
-      					<a href="#">Oppo</a>
-      					<a href="#">Google</a>
-    				</div>
-  				</li>
-				<li><a href="">Help & Contact</a></li>
-				<li id="selected_item"><a href="./aboutPage.html">About Us</a></li>
-				<li><a href="">My Account</a></li>
+				<li><a href="./categoryPage.php"></a></li>
+				<li><a href="./contactPage.php">Help & Contact</a></li>
+				<li><a href="./aboutPage.html">About Us</a></li>
+				<li><a href="./myAccount.php">My Account</a></li>
 			</ol>
 		</div>
 	</div>

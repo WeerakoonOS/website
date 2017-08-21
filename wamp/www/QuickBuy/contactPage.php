@@ -12,8 +12,13 @@
 <div id="container">
 	<div id="header">
 		<div id="signin">
+		<!-- //<form action="./login.php"> -->
 			<button class="button" id="signinbtn">Already a member?</button>
+		<!-- //</form> -->
+		<!-- //<form action="./signup.php"> -->
 			<button class="button">Sign Up</button>
+			<!-- //</form> -->
+			
 		</div>
 		<div id="logo">
 			<img src="./img/logo.jpg">
@@ -22,9 +27,9 @@
 			<p id="stext1"> Welcome to QuickBuy.lk !</p>
 		</div>
 		<div id="top_info">
-			<form id="searchform">
+			<form id="searchform" action="searchResults.php" method='post'>
 				
-				<input type="text" id="stext2" placeholder="Search Here" required>
+				<input type="text" id="stext2" placeholder="Search Here" name="searchText">
 				<input type="button" id="sbutton" value="Search">
 
 			</form>
@@ -43,12 +48,12 @@
 </div>
 
 <div class="container2" align="center" align="center">
-  <form id="contactfrom" action="/action_page.php" style="margin-top: 100px; width: 25%; text-align: left;">
+  <form id="contactfrom" action="./contactPage.php" style="margin-top: 100px; width: 25%; text-align: left;">
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="fname" name="fname" placeholder="Your name..">
 
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" id="lname" name="lname" placeholder="Your last name..">
 
     <label for="country">Email</label>
     <input type="email" id="email2" name="email" placeholder="Your E-mail..">
@@ -59,6 +64,27 @@
     <input type="submit" value="Submit">
   </form>
 </div>
+
+<?php
+	/*var_dump($_POST['button2']);
+	var_dump($_POST['name']);
+	var_dump($_POST['price']);*/
+    if(isset($_POST['submit'])){
+    	// if(!empty($_POST['fname'])&&($_POST['lname'])&&($_POST['email'])&&($_POST['subject'])){
+        $fname=$_POST['fname'];
+        $lname=$_POST['lname'];
+        $email=$_POST['email'];
+        $subject=$_POST['subject'];
+        echo "a";
+		$sql="INSERT INTO `cust_inquiries`(`fname`, `lname`, `email`, `subject`) VALUES ('$fname','$lname','$email','$subject')";
+            $res1=mysqli_query($conn,$sql)
+            	or die(mysqli_error($conn));
+            // if($res1){
+            // 		echo mysqli_connect_error($conn);
+            // }
+        // }
+   	}
+    ?>
 
 </body>
 </html>
